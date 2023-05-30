@@ -1,0 +1,14 @@
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Deletar</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<form action="/timescampeonato/delete" method="POST" modelAttribute="timescampeonato">
+    Id Times Campeonato:<br>
+    <input type="text" th:value="${timescampeonato.id}" name="id" readOnly="true"><br>
+    <br>
+    <input type="submit" value="Inserir">
+</form>
+</body>
+</html>

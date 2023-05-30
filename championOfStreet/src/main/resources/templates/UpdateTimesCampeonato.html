@@ -1,0 +1,21 @@
+<html><html lang="en" xmlns:th="http://www.w3.org/1999/xhtml"><head>
+    <title>Atualizar</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<form action="/timescampeonato/update" method="POST" modelAttribute="timescampeonato">
+    Id Time Campeonato:<br>
+    <input type="text" name="id" th:value="${timescampeonato.id}" readOnly="true"><br>
+    <br>
+    Id do Usuario:<br>
+    <input type="text" name="idUsuario" th:value="${timescampeonato.idUsuario}"><br>
+    <br>
+    Id do Campeonato:<br>
+    <input type="number" name="idCampeonato" th:value="${timescampeonato.idCampeonato}"><br>
+    <br>
+    Id do Time:<br>
+    <input type="number" name="idTime" th:value="${timescampeonato.idTime}"><br>
+    <input type="submit" value="Inserir">
+</form>
+</body>
+</html>

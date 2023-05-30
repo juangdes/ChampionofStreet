@@ -1,0 +1,19 @@
+<html><html lang="en" xmlns:th="http://www.w3.org/1999/xhtml"><head>
+    <title>Atualizar</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<form action="/time/update" method="POST" modelAttribute="time">
+    Id Time:<br>
+    <input type="text" name="id" th:value="${time.id}" readOnly="true"><br>
+    <br>
+    Nome:<br>
+    <input type="text" name="nome" th:value="${time.nome}"><br>
+    <br>
+    Maximo de Jogadores:<br>
+    <input type="number" name="maxJogadores" th:value="${time.maxJogadores}"><br>
+    <br>
+    <input type="submit" value="Inserir">
+</form>
+</body>
+</html>

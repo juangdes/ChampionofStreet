@@ -1,0 +1,19 @@
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Inserir</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<a href="/esporte/select">Ver Esportes</a> <br> <br>
+
+<form action="/esporte/insert" method="POST" modelAttribute="esporte">
+    Nome do Esporte:<br>
+    <input type="text" name="nome"><br>
+    <br>
+    Descrição do Esporte:<br>
+    <input type="text" name="descricao"><br>
+    <input type="submit" value="Inserir">
+</form>
+</body>
+</html>

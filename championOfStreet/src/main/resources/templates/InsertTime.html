@@ -1,0 +1,20 @@
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Inserir</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<a href="/time/select">Ver Times</a> <br> <br>
+
+<form action="/time/insert" method="POST" modelAttribute="time">
+    Nome:<br>
+    <input type="text" name="nome"><br>
+    <br>
+    Maximo de Jogadores:<br>
+    <input type="number" name="maxJogadores"><br>
+    <br>
+    <input type="submit" value="Inserir">
+</form>
+</body>
+</html>

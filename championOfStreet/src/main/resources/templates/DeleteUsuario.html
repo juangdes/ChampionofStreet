@@ -1,0 +1,15 @@
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Deletar</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<form action="/usuario/delete" method="POST" modelAttribute="usuario">
+
+    Id:<br>
+    <input type="text" name="id" th:value="${usuario.id}" readOnly="true"><br>
+    <br>
+    <input type="submit" value="Deletar">
+</form>
+</body>
+</html>

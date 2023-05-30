@@ -1,0 +1,23 @@
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Inserir</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<a href="/timescampeonato/select">Ver Times</a> <br> <br>
+
+<form action="/timescampeonato/insert" method="POST" modelAttribute="timescampeonato">
+    Id do Usuario:<br>
+    <input type="text" name="idUsuario"><br>
+    <br>
+    Id do Campeonato:<br>
+    <input type="number" name="idCampeonato"><br>
+    <br>
+    Id do Time:<br>
+    <input type="number" name="idTime"><br>
+
+    <input type="submit" value="Inserir">
+</form>
+</body>
+</html>

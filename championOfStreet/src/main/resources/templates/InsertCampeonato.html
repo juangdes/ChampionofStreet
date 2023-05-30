@@ -1,0 +1,32 @@
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Inserir</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<a href="/campeonato/select">Ver Esportes</a> <br> <br>
+
+<form action="/campeonato/insert" method="POST" modelAttribute="campeonato">
+    Descrição:<br>
+    <input type="text" name="descricao"><br>
+    <br>
+    Local:<br>
+    <input type="text" name="local"><br>
+    <br>
+    Maximo de Jogadores ou Times:<br>
+    <input type="number" name="maxJogadoresOuTimes"><br>
+    <br>
+    Data e Hora:<br>
+    <input type="date" name="dataHora"><br>
+    <br>
+    Tipo Campeonato:<br>
+    <input type="text" name="tipoCampeonato"><br>
+    <br>
+    Id Esporte:<br>
+    <input type="text" name="idEsporte"><br>
+    <br>
+    <input type="submit" value="Inserir">
+</form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Atualizar</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<form action="/usuario/update" method="POST" modelAttribute="usuario">
+
+    Id:<br>
+    <input type="text" name="id" th:value="${usuario.id}" readOnly="true"><br>
+    <br>
+    Nome Usuario:<br>
+    <input type="text" name="nome" th:value="${usuario.nome}"><br>
+    <br>
+    Email Usuario:<br>
+    <input type="text" name="email" th:value="${usuario.email}"><br>
+    <br>
+    Senha Cliente:<br>
+    <input type="text" name="senha" th:value="${usuario.senha}"><br>
+    <br>
+    Data de Nascimento Usuario:<br>
+    <input type="text" name="dataNascimento" th:value="${usuario.dataNascimento}"><br>
+    <br>
+    Ranking Usuario:<br>
+    <input type="number" name="ranking" th:value="${usuario.ranking}"><br>
+    <br>
+
+    <input type="submit" value="Atualizar">
+</form>
+</body>
+</html>

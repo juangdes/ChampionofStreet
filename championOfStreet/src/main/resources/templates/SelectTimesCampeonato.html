@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>CRUD Time</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+<a href="insert">Inserir novo</a>
+<table style="width:100%">
+    <tr>
+        <th>ID</td>
+        <th>Id do Usuario</td>
+        <th>Id do Campeonato</th></td>
+        <th>Id do Time</th></td>
+        <th>Excluir?</td>
+        <th>Alterar?</td>
+    </tr>
+    <tr th:each="timecampeonato : ${timescampeonato}">
+        <td th:text="${timecampeonato.id}"></td>
+        <td th:text="${timecampeonato.idUsuario}"></td>
+        <td th:text="${timecampeonato.idCampeonato}"></td>
+        <td th:text="${timecampeonato.idTime}"></td>
+        <td><a th:href="@{/timescampeonato/delete(id=${timecampeonato.id})}">Deletar</a></td>
+        <td><a th:href="@{/timescampeonato/update(id=${timecampeonato.id})}">Alterar</a></td>
+    </tr>
+</table>
+</body>
+</html>
